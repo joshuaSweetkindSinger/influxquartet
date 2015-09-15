@@ -1,9 +1,9 @@
 default: &default
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   reconnect: false
   pool: 5
-  username: root
+  username: joshua
   password:
   socket: /tmp/mysql.sock
 

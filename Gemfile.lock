@@ -52,7 +52,7 @@ GEM
     mime-types (2.6.2)
     minitest (5.8.0)
     multi_json (1.11.2)
-    mysql2 (0.3.18)
+    pg (0.18.3)
     rack (1.5.5)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -105,7 +105,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
-  mysql2
+  pg
   rails (= 4.1.8)
   sdoc (~> 0.4.0)
   spring
