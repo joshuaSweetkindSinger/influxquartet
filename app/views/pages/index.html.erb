@@ -10,13 +10,14 @@
   }
   .header {
     background:#333;
-    height:50px;
+    height:110px;
     overflow:hidden;
     padding-top:10px;
+    padding-bottom:10px;
   }
 
   .main {
-    height:85vh;
+    height:80vh;
     overflow-y:scroll;
     overflow-x:hidden;
     background:#969;
@@ -24,13 +25,19 @@
 
 </style>
 <div id="header" class="header">
-  <h1 style="text-align:center"><span style="color:white">In Flux</span><span style="display:inline-block;width:40px"></span><em style="color:white">A Barbershop Quartet</em></h1>
+  <h1 style="text-align:center"><%= image_tag('in_flux.gif')%><span style="display:inline-block;width:40px"></span><em style="color:white">A Barbershop Quartet</em></h1>
 </div>
 <div id="main" class="main">
   <div style="height:40px"></div>
   <div style="text-align:center">
-    <p style="color:#ccc">Let us sing for your next event. Contact Dave Kocharhook: dave@kocharhook.com</p>
-    <%= image_tag('in_flux_hawaii.jpg', width:750, height:500) %></div>
+    <p style="color:#ccc"><br>
+      Let us sing for your next event. Contact Dave Kocharhook: dave@kocharhook.com</p>
+    <%= image_tag('in_flux_hawaii.jpg', width:750, height:500, style:"border:3px solid purple") %>
+      <p style="color:white;text-align:center">
+        Barbershop singing is a uniquely american art-form. It focuses on rich, four-part harmonies
+        and blended voices that produce ringing chords.
+      </p>
+  </div>
 </div>
 
 
