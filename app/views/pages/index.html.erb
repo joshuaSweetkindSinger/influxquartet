@@ -1,10 +1,39 @@
 <style>
   body {
+    overflow:hidden;
     margin:0px;
     padding:0px;
-    overflow:hidden;
-    background:#aaa;
+    background: #10a0e0;
+    width:100vw;
+    height:100vh;
   }
+
+
+  .full-container {
+    position:relative;
+    margin:0px;
+    padding:0px;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    background:#aaa;
+    width:100vw;
+    height:95vh;
+    background: #10a0e0;
+  }
+
+  .main-container {
+    position:relative;
+    width:100vw;
+    height:90vh;
+    margin:0px;
+    padding:0px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    /* background:#3bf; */
+    background: #10a0e0;
+    color:white;
+  }
+
   h1 {
     margin:0px;
   }
@@ -16,37 +45,47 @@
     overflow:hidden;
   }
 
+
   .main {
-    margin:0px;
-    padding:0px;
-    height:80vh;
-    overflow-y:auto;
+    position:relative;
+    left:300px;
+    height:1000px;
+    width:100vh;
+    overflow-y:hidden;
     overflow-x:hidden;
-    /* background:#3bf; */
-    background: #10a0e0;
-    color:white;
   }
 
+
 </style>
+<div id="full-container" class="full-container">
+
 <div id="header" class="header">
   <%= image_tag('in_flux_logo_water.gif', style:'position:absolute;left:80px;top:20px')%>
   <div style="display:inline-block;position:absolute;left:390px;top:55px">
     <h1><em style="color:white">A Barbershop Quartet</em></h1>
   </div>
 </div>
+
+  <div id="main-container" class="main-container">
 <div id="main" class="main">
-  <div style="text-align:center">
+  <div style="text-align:left">
     <%= image_tag('in_flux_singing_bw.jpg', width:580, height:200, style:"border:3px solid #07f") %>
     <br><br>
     <br>
+    <div style="position:relative; left:85px; top:-10px; width:400px;">
       Let us sing for your next event. Email dave@kocharhook.com
       <p style="color:white;">
         Barbershop music is a uniquely American art form. It focuses on rich, four-part harmonies
         and blended voices that produce ringing chords.
       </p>
+    </div>
     <%= image_tag('in_flux_stanford_quad.jpg', width:580, height:400, style:"border:3px solid #07f") %><br><br>
   </div>
 </div>
+</div>
+
+</div>
+
 
 
 
