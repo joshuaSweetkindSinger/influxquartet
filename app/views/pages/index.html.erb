@@ -55,6 +55,29 @@
     overflow-x:hidden;
   }
 
+  .paragraph-container {
+    position:relative;
+    left:40px;
+    top:10px;
+    width:440px;
+  }
+
+  /*
+  .separator {
+    position:relative;
+    border:3px solid #07f;
+    width:585px;
+    height:10px;
+    background:#705030;
+  }*/
+
+  .separator {
+    position:relative;
+    border:3px solid #35a;
+    width:585px;
+    background:#705030;
+  }
+
 
 </style>
 <div id="full-container" class="full-container">
@@ -70,9 +93,9 @@
 <div id="main" class="main">
   <div style="text-align:left">
     <%= image_tag('in_flux4.gif', width:580, height:400, style:"border:3px solid #07f;border-top:none") %><br><br>
-    <div style="position:relative;border:1px solid black; width:585px;"></div>
+    <div class="separator"></div>
     <h1 style="margin-top:10px">About Us</h1>
-    <div style="position:relative; left:85px; top:10px; width:400px;">
+    <div class="paragraph-container">
       <p>We met each other while singing together at the <a href="http://www.barbershop-harmony.org/index.php?section=1">Peninsulaires</a> barbershop chorus,
         something we do for the sheer joy of singing. We find the rich, harmonious chords of the barbershop style
         deeply satisfying, and we formed our own quartet so that we could spend more time
@@ -82,18 +105,18 @@
 
     <%= image_tag('in_flux_singing_bw.jpg', width:580, height:200, style:"border:3px solid #07f") %><br><br>
     <%= image_tag('in_flux2.gif', width:580, height:300, style:"border:3px solid #07f") %><br><br>
-    <div style="position:relative;border:1px solid black; width:585px;"></div>
+    <div class="separator"></div>
     <h1 style="margin-top:10px;">About Barbershop Music</h1>
-    <div style="position:relative; left:85px; top:10px; width:400px;">
+    <div class="paragraph-container">
       <p style="color:white;">
         <a href="http://www.barbershop.org/">Barbershop music</a> is a uniquely American art form. It focuses on rich, four-part harmonies
         and blended voices that produce ringing chords.
       </p>
       <br>
     </div>
-    <div style="position:relative;border:1px solid black; width:585px;"></div>
+    <div class="separator"></div>
     <h1 style="margin-top:10px">Hire Us</h1>
-    <div style="position:relative; left:85px; top:10px; width:400px;">
+    <div class="paragraph-container">
       <p style="color:white;">
         We sing at weddings, funerals, christmas gatherings, valentine's day events,
         and on the occasional street corner.</p>
