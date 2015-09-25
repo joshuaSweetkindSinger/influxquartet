@@ -20,6 +20,7 @@
     /* background: #10a0e0; */
     background:yellow;
     box-sizing:border-box;
+    font-size:0px;
   }
 
   .header {
@@ -37,7 +38,7 @@
     height:83vh;
     margin:0px;
     padding:0px;
-    overflow-y:auto;
+    overflow-y:hidden;
     overflow-x:hidden;
     /* background:#3bf; */
     background: #10a0e0;
@@ -46,19 +47,41 @@
     box-sizing:border-box;
   }
 
+  .left-column {
+    display:inline-block;
+    width:20vw;
+    box-sizing:border-box;
+    border:3px solid red;
+    vertical-align:top;
+    font-size:12px;
+  }
+
+  .right-column {
+    display:inline-block;
+    width:20vw;
+    box-sizing:border-box;
+    border:3px solid red;
+    vertical-align:top;
+    font-size:12px;
+  }
+
   h1 {
     margin:0px;
+    font-size:24px;
   }
 
 
 
   .main {
-    position:relative;
-    left:300px;
-    height:2500px;
-    width:95vh;
-    overflow-y:hidden;
+    display:inline-block;
+    width:60vw;
+    height:83vh;
+    overflow-y:auto;
     overflow-x:hidden;
+    vertical-align:top;
+    box-sizing:border-box;
+    font-size:12px;
+    border:3px solid purple;
   }
 
   .paragraph-container {
@@ -90,12 +113,13 @@
 
   <div id="header" class="header">
     <%= image_tag('in_flux_logo_water.gif', style:'position:absolute;left:80px;top:20px')%>
-    <div style="display:inline-block;position:absolute;left:390px;top:55px">
+    <div style="display:inline-block;position:absolute;left:400px;top:62px">
       <h1><em style="color:white">A Barbershop Quartet</em></h1>
     </div>
   </div>
 
   <div id="main-container" class="main-container">
+    <div class="left-column">left column</div>
     <div id="main" class="main">
       <div style="text-align:left">
         <%= image_tag('in_flux4.jpg', width:580, height:400, style:"border:3px solid #07f;border-top:none") %><br><br>
@@ -133,8 +157,8 @@
         <%= image_tag('in_flux_stanford_quad.jpg', width:580, height:400, style:"border:3px solid #07f") %><br><br>
       </div>
     </div>
+    <div class="right-column">right column</div>
   </div>
-
 </div>
 
 
