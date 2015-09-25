@@ -5,10 +5,34 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <style>
+    body {
+      overflow:hidden;
+      margin:0px;
+      padding:0px;
+      background: yellow;
+      box-sizing:border-box;
+    }
+  </style>
 </head>
 <body>
+<div id="full-container" class="full-container">
 
-<%= yield %>
+  <div id="header" class="header">
+    <%= image_tag('in_flux_logo_water.gif', style:'position:absolute;left:80px;top:20px')%>
+    <div style="display:inline-block;position:absolute;left:400px;top:62px">
+      <h1><em style="color:white">A Barbershop Quartet</em></h1>
+    </div>
+  </div>
+
+  <div id="main-container" class="main-container">
+    <div class="left-column">left column</div>
+    <div id="main" class="main">
+      <%= yield %>
+    </div>
+    <div class="right-column">right column</div>
+  </div>
+</div>
 
 </body>
 </html>

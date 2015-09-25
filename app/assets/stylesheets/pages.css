@@ -1,3 +1,102 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.full-container {
+    position:relative;
+    margin:0px;
+    padding:0px;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    background:#aaa;
+    width:100vw;
+    height:100vh;
+    /* background: #10a0e0; */
+    background:yellow;
+    box-sizing:border-box;
+    font-size:0px;
+}
+
+.header {
+    position:relative;
+    margin:0px;
+    background:#333;
+    height:17vh;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+
+.main-container {
+    position:relative;
+    width:100vw;
+    height:83vh;
+    margin:0px;
+    padding:0px;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    /* background:#3bf; */
+    background: #10a0e0;
+
+    color:white;
+    box-sizing:border-box;
+}
+
+.left-column {
+    display:inline-block;
+    width:20vw;
+    box-sizing:border-box;
+    border:3px solid red;
+    vertical-align:top;
+    font-size:12px;
+}
+
+.right-column {
+    display:inline-block;
+    width:20vw;
+    box-sizing:border-box;
+    border:3px solid red;
+    vertical-align:top;
+    font-size:12px;
+}
+
+h1 {
+    margin:0px;
+    font-size:24px;
+}
+
+
+
+.main {
+    display:inline-block;
+    width:60vw;
+    height:83vh;
+    overflow-y:auto;
+    overflow-x:hidden;
+    vertical-align:top;
+    box-sizing:border-box;
+    font-size:12px;
+    border:3px solid purple;
+}
+
+.paragraph-container {
+    position:relative;
+    left:40px;
+    top:10px;
+    width:440px;
+}
+
+/*
+.separator {
+  position:relative;
+  border:3px solid #07f;
+  width:585px;
+  height:10px;
+  background:#705030;
+}*/
+
+.separator {
+    position:relative;
+    border:3px solid #35a;
+    width:585px;
+    background:#705030;
+}
