@@ -3,9 +3,8 @@
     overflow:hidden;
     margin:0px;
     padding:0px;
-    background: #10a0e0;
-    width:100vw;
-    height:100vh;
+    background: yellow;
+    box-sizing:border-box;
   }
 
 
@@ -17,33 +16,40 @@
     overflow-x:hidden;
     background:#aaa;
     width:100vw;
-    height:95vh;
-    background: #10a0e0;
+    height:100vh;
+    /* background: #10a0e0; */
+    background:yellow;
+    box-sizing:border-box;
+  }
+
+  .header {
+    position:relative;
+    margin:0px;
+    background:#333;
+    height:17vh;
+    overflow:hidden;
+    box-sizing:border-box;
   }
 
   .main-container {
     position:relative;
     width:100vw;
-    height:90vh;
+    height:83vh;
     margin:0px;
     padding:0px;
     overflow-y:auto;
     overflow-x:hidden;
     /* background:#3bf; */
     background: #10a0e0;
+
     color:white;
+    box-sizing:border-box;
   }
 
   h1 {
     margin:0px;
   }
-  .header {
-    position:relative;
-    margin:0px;
-    background:#333;
-    height:100px;
-    overflow:hidden;
-  }
+
 
 
   .main {
@@ -62,14 +68,14 @@
     width:440px;
   }
 
-  /*
-  .separator {
-    position:relative;
-    border:3px solid #07f;
-    width:585px;
-    height:10px;
-    background:#705030;
-  }*/
+    /*
+    .separator {
+      position:relative;
+      border:3px solid #07f;
+      width:585px;
+      height:10px;
+      background:#705030;
+    }*/
 
   .separator {
     position:relative;
@@ -82,52 +88,52 @@
 </style>
 <div id="full-container" class="full-container">
 
-<div id="header" class="header">
-  <%= image_tag('in_flux_logo_water.gif', style:'position:absolute;left:80px;top:20px')%>
-  <div style="display:inline-block;position:absolute;left:390px;top:55px">
-    <h1><em style="color:white">A Barbershop Quartet</em></h1>
+  <div id="header" class="header">
+    <%= image_tag('in_flux_logo_water.gif', style:'position:absolute;left:80px;top:20px')%>
+    <div style="display:inline-block;position:absolute;left:390px;top:55px">
+      <h1><em style="color:white">A Barbershop Quartet</em></h1>
+    </div>
   </div>
-</div>
 
   <div id="main-container" class="main-container">
-<div id="main" class="main">
-  <div style="text-align:left">
-    <%= image_tag('in_flux4.jpg', width:580, height:400, style:"border:3px solid #07f;border-top:none") %><br><br>
-    <%= image_tag('in_flux4.gif', width:580, height:400, style:"border:3px solid #07f;border-top:none") %><br><br>
-    <div class="separator"></div>
-    <h1 style="margin-top:10px">About Us</h1>
-    <div class="paragraph-container">
-      <p>We met each other while singing together at the <a href="http://www.barbershop-harmony.org/index.php?section=1">Peninsulaires</a> barbershop chorus,
-        something we do for the sheer joy of singing. We find the rich, harmonious chords of the barbershop style
-        deeply satisfying, and we formed our own quartet so that we could spend more time
-        perfecting the craft. It has been our goal over the last two years to bring barbershop music to as many people
-        as possible.
-    </div>
+    <div id="main" class="main">
+      <div style="text-align:left">
+        <%= image_tag('in_flux4.jpg', width:580, height:400, style:"border:3px solid #07f;border-top:none") %><br><br>
+        <%= image_tag('in_flux4.gif', width:580, height:400, style:"border:3px solid #07f;border-top:none") %><br><br>
+        <div class="separator"></div>
+        <h1 style="margin-top:10px">About Us</h1>
+        <div class="paragraph-container">
+          <p>We met each other while singing together at the <a href="http://www.barbershop-harmony.org/index.php?section=1">Peninsulaires</a> barbershop chorus,
+            something we do for the sheer joy of singing. We find the rich, harmonious chords of the barbershop style
+            deeply satisfying, and we formed our own quartet so that we could spend more time
+            perfecting the craft. It has been our goal over the last two years to bring barbershop music to as many people
+            as possible.
+        </div>
 
-    <%= image_tag('in_flux_singing_bw.jpg', width:580, height:200, style:"border:3px solid #07f") %><br><br>
-    <%= image_tag('in_flux2.gif', width:580, height:300, style:"border:3px solid #07f") %><br><br>
-    <div class="separator"></div>
-    <h1 style="margin-top:10px;">About Barbershop Music</h1>
-    <div class="paragraph-container">
-      <p style="color:white;">
-        <a href="http://www.barbershop.org/">Barbershop music</a> is a uniquely American art form. It focuses on rich, four-part harmonies
-        and blended voices that produce ringing chords.
-      </p>
-      <br>
+        <%= image_tag('in_flux_singing_bw.jpg', width:580, height:200, style:"border:3px solid #07f") %><br><br>
+        <%= image_tag('in_flux2.gif', width:580, height:300, style:"border:3px solid #07f") %><br><br>
+        <div class="separator"></div>
+        <h1 style="margin-top:10px;">About Barbershop Music</h1>
+        <div class="paragraph-container">
+          <p style="color:white;">
+            <a href="http://www.barbershop.org/">Barbershop music</a> is a uniquely American art form. It focuses on rich, four-part harmonies
+            and blended voices that produce ringing chords.
+          </p>
+          <br>
+        </div>
+        <div class="separator"></div>
+        <h1 style="margin-top:10px">Hire Us</h1>
+        <div class="paragraph-container">
+          <p style="color:white;">
+            We sing at weddings, funerals, christmas gatherings, valentine's day events,
+            and on the occasional street corner.</p>
+          <p>If you would like us to sing at your next event, please send email to dave@kocharhook.com.
+          </p>
+        </div>
+        <%= image_tag('in_flux_stanford_quad.jpg', width:580, height:400, style:"border:3px solid #07f") %><br><br>
+      </div>
     </div>
-    <div class="separator"></div>
-    <h1 style="margin-top:10px">Hire Us</h1>
-    <div class="paragraph-container">
-      <p style="color:white;">
-        We sing at weddings, funerals, christmas gatherings, valentine's day events,
-        and on the occasional street corner.</p>
-      <p>If you would like us to sing at your next event, please send email to dave@kocharhook.com.
-      </p>
-    </div>
-    <%= image_tag('in_flux_stanford_quad.jpg', width:580, height:400, style:"border:3px solid #07f") %><br><br>
   </div>
-</div>
-</div>
 
 </div>
 
