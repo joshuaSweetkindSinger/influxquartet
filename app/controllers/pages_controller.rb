@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
-  def index
+  def show
+    render "page#{params[:id] || 1}"
   end
 end

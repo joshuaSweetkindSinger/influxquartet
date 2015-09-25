@@ -46,16 +46,15 @@
     display:inline-block;
     width:20vw;
     box-sizing:border-box;
-    border:3px solid red;
     vertical-align:top;
     font-size:18px;
 }
 
 .right-column {
+    padding-left:10px;
     display:inline-block;
     width:20vw;
     box-sizing:border-box;
-    border:3px solid red;
     vertical-align:top;
     font-size:18px;
 }
@@ -76,7 +75,6 @@ h1 {
     vertical-align:top;
     box-sizing:border-box;
     font-size:18px;
-    border:3px solid purple;
 }
 
 .paragraph-container {

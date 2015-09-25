@@ -23,10 +23,20 @@
     <div style="display:inline-block;position:absolute;left:400px;top:62px">
       <h1><em style="color:white">A Barbershop Quartet</em></h1>
     </div>
+    <% if params[:id] == '4' %>
+      <%= image_tag('music_notes_gray.png', width:380, height:100, style:"position:absolute;left:700px") %>
+    <% end %>
   </div>
 
   <div id="main-container" class="main-container">
-    <div class="left-column">left column</div>
+    <div class="left-column">
+      <ul>
+        <li><a href="1">Page 1</a></li>
+        <li><a href="2">Page 2</a></li>
+        <li><a href="3">Page 3</a></li>
+        <li><a href="4">Page 4</a></li>
+      </ul>
+    </div>
     <div id="main" class="main">
       <%= yield %>
     </div>
