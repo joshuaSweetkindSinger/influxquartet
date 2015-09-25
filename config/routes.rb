@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'pages#show'
+  get '/', to: redirect('/pages/1')
   get 'pages/:id', to: 'pages#show'
 
   # The priority is based upon order of creation: first created -> highest priority.
