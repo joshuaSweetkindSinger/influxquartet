@@ -1,6 +1,5 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*    background-image:url("happy_days.gif"); */
 
 .full-container {
     position:relative;
@@ -8,19 +7,34 @@
     padding:0px;
     overflow-y:hidden;
     overflow-x:hidden;
-    background:#aaa;
     width:100vw;
     height:100vh;
-    /* background: #10a0e0; */
-    background:yellow;
     box-sizing:border-box;
     font-size:0px;
 }
 
-.header {
+.header1 {
     position:relative;
     margin:0px;
     background:#333;
+    height:17vh;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+
+.header2 {
+    position:relative;
+    margin:0px;
+    background-image:url('happy_days_excerpt_long_gray_on_slate_scaled.gif');
+    height:17vh;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+
+.header3 {
+    position:relative;
+    margin:0px;
+    background-image:url('happy_days_excerpt_long_gray_on_slate.gif');
     height:17vh;
     overflow:hidden;
     box-sizing:border-box;
@@ -34,9 +48,7 @@
     padding:0px;
     overflow-y:hidden;
     overflow-x:hidden;
-    /* background:#3bf; */
     background: #10a0e0;
-
     color:white;
     box-sizing:border-box;
     font-size:0px;

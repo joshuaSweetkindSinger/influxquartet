@@ -10,7 +10,6 @@
       overflow:hidden;
       margin:0px;
       padding:0px;
-      background: yellow;
       box-sizing:border-box;
     }
   </style>
@@ -18,13 +17,21 @@
 <body>
 <div id="full-container" class="full-container">
 
-  <div id="header" class="header">
+  <div id="header"
+       <% if params[:id] == '2' %>
+       class="header2"
+       <% elsif params[:id] == '3' %>
+       class = "header3"
+       <% else %>
+       class = "header1"
+       <% end %>
+  >
     <%= image_tag('in_flux_logo_water.gif', style:'position:absolute;left:80px;top:20px')%>
     <div style="display:inline-block;position:absolute;left:400px;top:62px">
       <h1><em style="color:white">A Barbershop Quartet</em></h1>
     </div>
     <% if params[:id] == '4' %>
-      <%= image_tag('music_notes_gray.png', width:380, height:100, style:"position:absolute;left:700px") %>
+      <%= image_tag('happy_days_excerpt_alpha_white.gif', width:300, height:100, style:"position:absolute;left:780px") %>
     <% end %>
   </div>
 
@@ -35,6 +42,7 @@
         <li><a href="2">Page 2</a></li>
         <li><a href="3">Page 3</a></li>
         <li><a href="4">Page 4</a></li>
+        <li><a href="5">Page 5</a></li>
       </ul>
     </div>
     <div id="main" class="main">
