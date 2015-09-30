@@ -25,10 +25,10 @@
 .header2 {
     position:relative;
     margin:0px;
-    background-image:url('happy_days_excerpt_long_gray_on_slate_scaled.gif');
     height:17vh;
     overflow:hidden;
     box-sizing:border-box;
+    background:#333;
 }
 
 .header3 {
@@ -38,6 +38,24 @@
     height:17vh;
     overflow:hidden;
     box-sizing:border-box;
+}
+
+.header4 {
+    position:relative;
+    margin:0px;
+    height:17vh;
+    overflow:hidden;
+    box-sizing:border-box;
+    background:#333;
+}
+
+.header5 {
+    position:relative;
+    margin:0px;
+    height:17vh;
+    overflow:hidden;
+    box-sizing:border-box;
+    background:#333;
 }
 
 .main-container {
@@ -54,9 +72,11 @@
     font-size:0px;
 }
 
+
 .left-column {
     display:inline-block;
     width:20vw;
+    height:83vh;
     box-sizing:border-box;
     vertical-align:top;
     font-size:18px;
@@ -69,6 +89,11 @@
     box-sizing:border-box;
     vertical-align:top;
     font-size:18px;
+    position:relative;
+    left:-30px;
+    z-index:10;
+    background: #10a0e0;
+    height:83vh;
 }
 
 h1 {
@@ -87,6 +112,10 @@ h1 {
     vertical-align:top;
     box-sizing:border-box;
     font-size:18px;
+}
+
+.main::-webkit-scrollbar {
+    display:none;
 }
 
 .paragraph-container {
